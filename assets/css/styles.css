@@ -19,13 +19,11 @@ a .fab {
 }
 
 .fab {
-    padding: .2rem;
+    padding: .5rem;
 }
 
 body {
-    color: white;
-    background: transparent;
-    height: 100%;
+    height: fit-content;
     background-image: linear-gradient(to right, rgb(17, 40, 60), rgb(101, 116, 130));
     background-repeat:
       no-repeat,
@@ -48,18 +46,29 @@ body {
 #nameMain {
     color: white;
     background: transparent;
+    padding-bottom: 8px;
 }
+
 #aboutMe {
     padding-left: 1.3rem;
 }
 
-#title {
-    padding-right: 30px;
+.row {
+    display: block;  
 }
 
-#showcase {
-    display: flex;
+a {
+    color: #17a2b8;
+}
+
+#title {
+    padding-right: 25px;
+}
+
+#intro {
+    /* display: flex; */
     margin: 5%;
+    margin-top: 3%;
 }
 
 #initPara {
@@ -69,15 +78,46 @@ body {
 #profilePic {
     float: left;
     margin: .8rem;
-    color: rgb(145, 44, 52);
 }
 
+#nav-profile{
+    margin: 5% 15%;
+}
+
+#nav-home { 
+    font-size: 1.2rem;
+}
+
+#nav-contact {
+    margin-left: 5%;
+    font-size: 1.5rem;
+}
+
+.nav-tabs {
+    border-bottom: 1px solid #dee2e6;
+    font-size: 1.5rem;
+}
+
+#showcase {
+    background: transparent;
+    width: 50%;
+}
 
 .carousel-control-prev-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f00' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
    }
    
-   .carousel-control-next-icon {
-     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f00' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
-   }
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f00' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
    
+.nav-tabs .nav-link {
+    background: transparent;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    opacity: 0.45;
+    color: #17a2b8;
+}
+
+@media screen and (min-width: 432px){

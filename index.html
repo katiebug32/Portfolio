@@ -5,12 +5,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Caveat|Kaushan+Script|Nothing+You+Could+Do" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Caveat|Kaushan+Script|Nothing+You+Could+Do|Rock+Salt" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/styles.css">
 
@@ -19,116 +19,133 @@
 <body>
     <section id="basicInfo">
         <div class="jumbotron">
-            <h1 class="display-4" id="nameMain" style="font-family: 'Nothing You Could Do', cursive;">Katie Robertson </h1>
+            <h1 id="nameMain" style="font-family: 'Rock Salt', cursive;">Katie Robertson
+            </h1>
             <hr class="my-2">
             <div>
-                <h4 class="d-inline-block" id="title">Full-Stack Web Develper</h4>
+                <h4 class="d-inline-block align-self-center" id="title">Full-Stack Web Develper</h4>
                 <a href="https://github.com/katiebug32"><i class="fab fa-github fa-2x"></i></a>
                 <a href="https://www.linkedin.com/in/katie-l-robertson/"><i class="fab fa-linkedin fa-2x"></i></a>
             </div>
         </div>
     </section>
-    <section id="showcase">
+    <section id="intro">
         <div class="row">
-            <div class="col-6" id="leftBox">
-                <h4 id="aboutMe">About Me:</h4>
-                <div id="mainPara">
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
+                        aria-controls="nav-home" aria-selected="true">About Me</a>
+                        <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
+                        aria-controls="nav-profile" aria-selected="false">Works & Collabs</a>
+                        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
+                            aria-controls="nav-contact" aria-selected="false">Let's Get In Touch</a>
+                </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                     <img id="profilePic" src="assets/images/headshotAsh.png" height="30%" width="30%">
-                    <p id="initPara">Hi, I'm Katie! I was born and raised in the San Francisco Bay Area. After attending several
-                        colleges around
-                        the area, I relocated to Southern California to study Finance at California State University
-                        at
-                        Fullerton. I worked for several years managing the financial books and offices of several
-                        design
-                        and construction businesses.
+                    <p id="initPara">Hi there, I'm Katie. I was born and raised in the San Francisco Bay Area, in a
+                        small town named Gilroy - garlic capitol of the world! After high school and community
+                        college, I spent some time at California State University
+                        Fullerton studying finance. I worked for several years managing the financial books and offices
+                        of several
+                        design and construction businesses.
                     </p>
-                    <p>After relocating to Austin, Texas with my husband Tim, I shifted my focus toward our growing
-                        a family. We now have two beautiful children as well as a collection of pets (including
-                        chickens!). I
-                        stayed busy working part-time contract bookkeeping until deciding to switch fields in 2018.
+                    <p>In 2008 I relocated to Austin, Texas with my husband Tim and shifted my focus toward our growing
+                        family. We now have two beautiful children as well as a collection of pets, including
+                        several chickens. I stayed busy working part-time contract bookkeeping until deciding to switch
+                        fields in 2018.
                     </p>
-                    <p>I am currently learning full stack web development at The UT Austin Coding Bootcamp. I
+                    <p>I am currently learning front- and back-end web development at The UT Austin Coding Bootcamp. I
                         believe my natural love of creativity, knack for building and fixing, and attention to small
                         details makes for a perfect fit in the ever-growing world of software development.
                     </p>
                 </div>
-                <div class="row" id="contactMe">
+                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                    <br>
+                    <br>
+                    <p>Katie Robertson <br /> 
+                    Austin, Texas <br />
+                    <a href="mailto:krobertsonshine@gmail.com">krobertsonshine@gmail.com</a>
+                    </p>    
+                    <br>
+                    <p>Click the links above to reach me on Github or LinkedIn.</p>
                 </div>
-            </div>
-            <div class="col-6" id="rightBox">
-                <h4 style="text-align: center;">Projects & Collaborations:</h4>
-                <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
-                    <div class="bd-example">
-                        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-                            <ol class="carousel-indicators">
-                                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-                                <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
-                                <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
-                                <li data-target="#carouselExampleCaptions" data-slide-to="5"></li>
-                            </ol>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <a href="https://katiebug32.github.io/Spiffy-Giphy/"><img
-                                            src="assets/images/spiffygiphy.png" class="d-block w-100"
-                                            alt="Spiffy-Giphy"></a>
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <!-- <h5>API Search App</h5> -->
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                    <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+                        <div class="bd-example">
+                            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                                    <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+                                    <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+                                    <li data-target="#carouselExampleCaptions" data-slide-to="5"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <a href="https://katiebug32.github.io/Spiffy-Giphy/"><img
+                                                src="assets/images/spiffygiphy.png" class="d-block w-100"
+                                                alt="Spiffy-Giphy"></a>
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <!-- <h5>API Search App</h5> -->
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item" data-pause="hover">
+                                        <a href="https://katiebug32.github.io/Austin-Texas-Trivia/"><img
+                                                src="assets/images/triviathumbnail.png" class="d-block w-100"
+                                                alt="Austin-Texas-Trivia"></a>
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <!-- <h5>Trivia Game</h5> -->
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <a href="https://katiebug32.github.io/Harry-Potter-Ultimate-Battle/"><img
+                                                src="assets/images/harrypottergamethumb.png" class="d-block w-100"
+                                                alt="Harry-Potter-Ultimate-Battle"></a>
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <!-- <h5>Strategy Game</h5> -->
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <a href="https://katiebug32.github.io/Medicine-Cabinet/"><img
+                                                src="assets/images/medicinecabinetthumb2.png" class="d-block w-100"
+                                                alt="Medicine-Cabinet"></a>
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <!-- <h5>Strategy Game</h5> -->
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <a href="https://katiebug32.github.io/Train-Schedule/"><img
+                                                src="assets/images/trainschedule.png" class="d-block w-100"
+                                                alt="Train-Schedule"></a>
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <!-- <h5>Strategy Game</h5> -->
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="carousel-item" data-pause="hover">
-                                    <a href="https://katiebug32.github.io/Austin-Texas-Trivia/"><img
-                                            src="assets/images/triviathumbnail.png" class="d-block w-100"
-                                            alt="Austin-Texas-Trivia"></a>
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <!-- <h5>Trivia Game</h5> -->
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <a href="https://katiebug32.github.io/Harry-Potter-Ultimate-Battle/"><img
-                                            src="assets/images/harrypottergamethumb.png" class="d-block w-100"
-                                            alt="Harry-Potter-Ultimate-Battle"></a>
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <!-- <h5>Strategy Game</h5> -->
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <a href="https://katiebug32.github.io/Medicine-Cabinet/"><img
-                                            src="assets/images/medicinecabinetthumb2.png" class="d-block w-100"
-                                            alt="Medicine-Cabinet"></a>
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <!-- <h5>Strategy Game</h5> -->
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <a href="https://katiebug32.github.io/Train-Schedule/"><img
-                                            src="assets/images/trainschedule.png" class="d-block w-100"
-                                            alt="Train-Schedule"></a>
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <!-- <h5>Strategy Game</h5> -->
-                                    </div>
-                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button"
+                                    data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button"
+                                    data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
                             </div>
-                            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button"
-                                data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button"
-                                data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
 </body>
 <footer>
-    
+
 </footer>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

@@ -1,7 +1,7 @@
 html {
     height: 100%;
-    /* background-image: linear-gradient(to right, rgb(17, 40, 60), rgb(101, 116, 130)); */
-    background: url(../images/background-boards-brown-518245.jpg);
+    background-image: linear-gradient(to right, rgb(17, 40, 60), rgb(101, 116, 130));
+    /* background: url(../images/background-boards-brown-518245.jpg); */
     background-repeat:
       no-repeat,
       no-repeat;
@@ -9,6 +9,10 @@ html {
       top,
       bottom;
    
+}
+
+p {
+    margin: 0, 5%;
 }
 /* #myVideo {
     position: fixed;
@@ -24,9 +28,10 @@ html {
 }
 
 a .fab {
-    /* color: white; */
-    color: rgb(215, 220, 227);
+    color: white;
+    /* color: rgb(215, 220, 227); */
 }
+
 a {
     color: rgb(215, 220, 227);
 }
@@ -36,16 +41,16 @@ a {
 
 body {
     height: fit-content;
-    background: url(../images/black-and-white-gray-grey-1050305.jpg);
+    /* background: url(../images/black-and-white-gray-grey-1050305.jpg); */
+    background-image: linear-gradient(to right, rgb(17, 40, 60), rgb(101, 116, 130));
     background-repeat:
       no-repeat,
       no-repeat;
     background-position: 
       top,
       bottom;
-    /* color: white; */
-    color: black;
-    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-family: 'Roboto', sans-serif;
 }
 
 .jumbotron {
@@ -58,8 +63,11 @@ body {
 }
 
 #nameMain {
-    /* color: white; */
-    color: rgb(26, 48, 82);
+    color: white;
+    /* color: rgb(26, 48, 82); */
+    font-size: 3rem;
+    font-family: 'Nothing You Could Do', cursive;
+
     background: transparent;
     padding-bottom: 8px;
 }
@@ -72,15 +80,9 @@ body {
     display: block;  
 }
 
-.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
-    color: #648e94;
-}
-
-.navbar-light .navbar-nav .nav-link {
-    color: #648e94;
-}
-
 #title {
+    display: inline-block;
+    align-self: center;
     padding-right: 25px;
 }
 
@@ -95,18 +97,17 @@ body {
 }
 
 #profilePic {
-    float: left;
+    text-align: center;
     margin: .8rem;
     border-radius: 50%;
 }
 
-/* #basicInfo {
-    color: white;
-    background: transparent;
-} */
-
 #nav-profile{
     margin: 5% 15%;
+}
+
+#nav-about{
+    margin: 5%;
 }
 
 #nav-home { 
@@ -114,13 +115,15 @@ body {
 }
 
 #nav-contact {
-    margin-left: 5%;
     font-size: 1.5rem;
 }
 
 .nav-tabs {
     border-bottom: 1px solid #ebeef2;
     font-size: 1.5rem;
+    /* justify-content: space-around; */
+    justify-content: center;
+    margin: 2.5%;
 }
 
 #showcase {
@@ -131,33 +134,79 @@ body {
 li {
     color: rgb(215, 220, 227);
 }
-/* 
-.carousel-control-prev-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f00' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    background: no-repeat 50%/100% 100%;
-}
-   
-.carousel-control-next-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f00' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    background: no-repeat 50%/100% 100%;
+
+.carousel {
+    position: relative;
+    margin: 5%;
 }
 
-.nav-tabs .nav-link {
-    background: transparent;
-} */
+.carousel-control-next .carousel-control-prev{
+    font-size: 3.5rem; 
+    color: rgb(104, 114, 128);
+}
+
+a:hover {
+    color: #7497c4;
+}
+
+i:hover {
+    color: #7497c4;
+}
+
+.nav-tabs .nav-link:hover {
+    border: none;
+}
 
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
     opacity: 0.65;
     color: rgb(26, 48, 82);
 }
 
+.nav-item .nav-link {
+color: white;
+}
+
+.nav-item .nav-link .active
 .nav-link {
     color: rgb(26, 48, 82);
 }
-/* @media screen and (min-width: 432px){ */
+
+
+@media screen and (max-width: 520px){
+    #title {
+        display: block;
+    }
+    
+    .fa-3x {
+        font-size: 2rem;
+    }
+
+    .fa-2x {
+        font-size: 2rem;
+    }
+
+    #nav-tab {
+        display: block;
+        text-align: center;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+}
+
+@media screen and (max-width: 625px){
+    #nav-tab {
+        display: block;
+        text-align: center;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+}
+
+@media screen and (min-width: 1150px){
+    .carousel {
+        position: relative;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 12%;
+    }
+}

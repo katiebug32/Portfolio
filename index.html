@@ -10,16 +10,19 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Caveat|Open+Sans|Dosis|Kaushan+Script|Encode+Sans+Condensed|Laila|Nothing+You+Could+Do|Open+Sans+Condensed:300|Rock+Salt" rel="stylesheet">    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css?family=Bilbo|Euphoria+Script|Give+You+Glory|Homemade+Apple|Kristi|La+Belle+Aurore|Loved+by+the+King|Nothing+You+Could+Do|Over+the+Rainbow|Sedgwick+Ave|Shadows+Into+Light|Shadows+Into+Light+Two|Roboto:300|The+Girl+Next+Door"
+        rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/styles.css">
 
 </head>
+
 <body>
     <!-- <video autoplay muted loop id="myVideo">
             <source src="assets/images/hd1086.mov" type="video/mp4">
           </video> -->
     <section id="basicInfo">
-            <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
                     <a class="navbar-brand" style="font-family: 'Encode Sans Condensed', sans-serif" href="#">Katie Robertson</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
@@ -39,31 +42,42 @@
                     </div>
                   </nav> -->
         <div class="jumbotron">
-            <h1 id="nameMain" style="font-family: 'Dosis', sans-serif">Katie Robertson
+            <h1 id="nameMain">Katie Robertson
             </h1>
             <hr class="my-2">
             <div>
                 <h4 class="d-inline-block align-self-center" id="title">Full-Stack Web Developer</h4>
-                <a href="https://github.com/katiebug32" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-                <a href="https://www.linkedin.com/in/katie-l-robertson/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+                <a href="https://github.com/katiebug32" target="_blank"><i class="fab fa-github fa-3x"></i></a>
+                <a href="https://www.linkedin.com/in/katie-l-robertson/" target="_blank"><i
+                        class="fab fa-linkedin fa-3x"></i></a>
             </div>
+        </div>
+    </section>
+    <section style="text-align: center;">
+        <div id="headshot">
+            <img id="profilePic" src="assets/images/headshotAsh.png" height="30%" width="30%"
+                style="text-align: center;">
         </div>
     </section>
     <section id="intro">
         <div class="row">
             <nav>
                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
-                        aria-controls="nav-home" aria-selected="true">About Me</a>
-                        <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
-                        aria-controls="nav-profile" aria-selected="false">Works & Collabs</a>
-                        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
-                            aria-controls="nav-contact" aria-selected="false">Let's Get In Touch</a>
+                    <!-- <a class="nav-item nav-link" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
+                                aria-controls="nav-home" aria-selected="true"></a> -->
+                    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-about" role="tab"
+                        aria-controls="nav-about" aria-selected="false">About Me</a>
+                    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-works" role="tab"
+                        aria-controls="nav-works" aria-selected="false">Works & Collabs</a>
+                    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
+                        aria-controls="nav-contact" aria-selected="false">Let's Get In Touch</a>
                 </div>
             </nav>
             <div class="tab-content" id="nav-tabContent">
-                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <!-- <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                     <img id="profilePic" src="assets/images/headshotAsh.png" height="30%" width="30%">
+                </div> -->
+                <div class="tab-pane fade" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab">
                     <p id="initPara">Hi there, I'm Katie. I was born and raised in the San Francisco Bay Area, in a
                         small town named Gilroy - garlic capitol of the world! After high school and community
                         college, I spent some time at California State University
@@ -83,15 +97,25 @@
                 </div>
                 <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
                     <br>
-                    <br>
-                    <p>Katie Robertson <br /> 
-                    Austin, Texas <br />
-                    <a href="mailto:krobertsonshine@gmail.com">krobertsonshine@gmail.com</a>
-                    </p>    
-                    <br>
-                    <p>Click the links above to reach me on Github or LinkedIn.</p>
+                    <div class="row" style="text-align: center;">
+                        <div>
+                            <p>Katie Robertson <br />
+                                Austin, Texas <br />
+                                <a href="mailto:krobertsonshine@gmail.com">krobertsonshine@gmail.com</a>
+                                </p>
+                                <a href="https://github.com/katiebug32" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                                <a href="https://www.linkedin.com/in/katie-l-robertson/" target="_blank"><i
+                                        class="fab fa-linkedin fa-2x"></i></a>
+                            </div>
+                        </div>
+                    <!-- <p>Katie Robertson <br />
+                        Austin, Texas <br />
+                        <a href="mailto:krobertsonshine@gmail.com">krobertsonshine@gmail.com</a>
+                    </p>
+                    <br> -->
+                 
                 </div>
-                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                <div class="tab-pane fade" id="nav-works" role="tabpanel" aria-labelledby="nav-works-tab">
                     <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
                         <div class="bd-example">
                             <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
@@ -104,8 +128,9 @@
                                     <li data-target="#carouselExampleCaptions" data-slide-to="5"></li>
                                 </ol>
                                 <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <a href="https://katiebug32.github.io/Spiffy-Giphy/" target="_blank" ><img
+                                    <br>
+                                    <div class="carousel-item active" data-pause="hover">
+                                        <a href="https://katiebug32.github.io/Spiffy-Giphy/" target="_blank"><img
                                                 src="assets/images/spiffygiphy.png" class="d-block w-100"
                                                 alt="Spiffy-Giphy"></a>
                                         <div class="carousel-caption d-none d-md-block">
@@ -113,31 +138,36 @@
                                         </div>
                                     </div>
                                     <div class="carousel-item" data-pause="hover">
-                                        <a href="https://katiebug32.github.io/Austin-Texas-Trivia/" target="_blank" ><img
+                                        <a href="https://katiebug32.github.io/Austin-Texas-Trivia/" target="_blank"><img
                                                 src="assets/images/triviathumbnail.png" class="d-block w-100"
                                                 alt="Austin-Texas-Trivia"></a>
                                         <div class="carousel-caption d-none d-md-block">
                                             <!-- <h5>Trivia Game</h5> -->
                                         </div>
                                     </div>
-                                    <div class="carousel-item">
-                                        <a href="https://katiebug32.github.io/Harry-Potter-Ultimate-Battle/" target="_blank" ><img
-                                                src="assets/images/harrypottergamethumb.png" class="d-block w-100"
-                                                alt="Harry-Potter-Ultimate-Battle"></a>
+                                    <div class="carousel-item" data-pause="hover">
+                                        <a href="https://katiebug32.github.io/Harry-Potter-Ultimate-Battle/"
+                                            target="_blank"><img src="assets/images/harrypottergamethumb.png"
+                                                class="d-block w-100" alt="Harry-Potter-Ultimate-Battle"></a>
                                         <div class="carousel-caption d-none d-md-block">
                                             <!-- <h5>Strategy Game</h5> -->
                                         </div>
                                     </div>
-                                    <div class="carousel-item">
-                                        <a href="https://katiebug32.github.io/Medicine-Cabinet/" target="_blank" ><img
+                                    <div class="carousel-item" data-pause="hover">
+                                        <a href="https://katiebug32.github.io/Medicine-Cabinet/" target="_blank"><img
                                                 src="assets/images/medicinecabinetthumb2.png" class="d-block w-100"
                                                 alt="Medicine-Cabinet"></a>
                                         <div class="carousel-caption d-none d-md-block">
                                             <!-- <h5>Strategy Game</h5> -->
                                         </div>
+                                        <div>
+                                            <p>
+                                                This is a description about a project. Blah Blah Blah Uses this dohtoeihbjnoichkjo;ikhj.
+                                            </p>
+                                        </div>
                                     </div>
-                                    <div class="carousel-item">
-                                        <a href="https://katiebug32.github.io/Train-Schedule/" target="_blank" ><img
+                                    <div class="carousel-item" data-pause="hover">
+                                        <a href="https://katiebug32.github.io/Train-Schedule/" target="_blank"><img
                                                 src="assets/images/trainschedule.png" class="d-block w-100"
                                                 alt="Train-Schedule"></a>
                                         <div class="carousel-caption d-none d-md-block">
@@ -147,12 +177,14 @@
                                 </div>
                                 <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button"
                                     data-slide="prev">
-                                    <span style="font-size: 3rem; color: rgb(215, 220, 227)" aria-hidden="true"><i class="fas fa-arrow-circle-left"></i></span>
+                                    <span style="font-size: 3.5rem; color: rgb(163, 183, 210)" aria-hidden="true"><i
+                                            class="fas fa-arrow-circle-left"></i></span>
                                     <span class="sr-only">Previous</span>
                                 </a>
                                 <a class="carousel-control-next" href="#carouselExampleCaptions" role="button"
                                     data-slide="next">
-                                    <span style="font-size: 3rem; color: rgb(215, 220, 227)" aria-hidden="true"><i class="fas fa-arrow-circle-right"></i></span>
+                                    <span style="font-size: 3.5rem; color: rgb(163, 183, 210)" aria-hidden="true"><i
+                                            class="fas fa-arrow-circle-right"></i></span>
                                     <span class="sr-only">Next</span>
                                 </a>
                             </div>
@@ -160,6 +192,7 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
 

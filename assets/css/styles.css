@@ -140,9 +140,13 @@ li {
     margin: 5%;
 }
 
-.carousel-control-next .carousel-control-prev{
+.carousel-control-next .carousel-control-prev {
     font-size: 3.5rem; 
     color: rgb(104, 114, 128);
+}
+
+.carousel-indicators li {
+    background-color: rgb(104, 114, 128);
 }
 
 a:hover {
